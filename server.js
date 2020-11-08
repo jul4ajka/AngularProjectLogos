@@ -54,10 +54,10 @@ app.use(bodyParser.urlencoded({
 
 //MySQL
 const connection = mysql.createConnection({
-    host: 'localhost'
-    , user: 'root'
-    , password: 'MyNewPass5!'
-    , database: 'komora'
+      host: 'ec2-54-166-114-48.compute-1.amazonaws.com'
+    , user: 'vfnvbgxlcqzenm'
+    , password: 'eb31a97918e559df4a86ad1c03538b5dc212e70d7788046b95e3cb29570f0d1c'
+    , database: 'dbhqodm5m2ctav'
 });
 // Ставорення таблиці користувачів
 const initDb = function () {
