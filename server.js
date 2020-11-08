@@ -54,10 +54,10 @@ app.use(bodyParser.urlencoded({
 
 //MySQL
 const connection = mysql.createConnection({
-      host: 'https://www.cleardb.com/database/details?id=939C9BA46DE119CF092E6639050A02EA'
-    , user: 'b5d1c69d629027'
-    , password: 'c9c55946'
-    , database: 'heroku_964e4b7f0a0c233'
+      host: 'd6ybckq58s9ru745.cbetxkdyhwsb.us-east-1.rds.amazonaws.com'
+    , user: 'eyl6s2j1fid0ac9o'
+    , password: 'tktchb4896krsil'
+    , database: 'm713hpm8zb4yy709'
 });
 
 
