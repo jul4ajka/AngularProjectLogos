@@ -1,0 +1,524 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+}
+
+/* Menu */
+
+.container3 {
+    width: 80vw;
+    height: 8vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row1 {
+    width: 50vw;
+    height: 8vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 70px;
+    font-family: Arial;
+    font-size: 48px;
+    color: white;
+}
+
+.row2 {
+    width: 50vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    width: 50vw;
+    height: 10vh;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10vw;
+    color: white;
+    font-family: Arial;
+}
+
+li:hover {
+    font-size: 24px;
+    transition: 1s;
+    color: violet;
+    cursor: pointer;
+}
+
+/* Search */
+
+.container2 {
+    width: 80vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.search {
+    border: 1px solid black;
+    border-radius: 40px;
+    background-color: white;
+    width: 250px;
+    height: 40px;
+    background: url('../images/search-128.png') no-repeat 8px 6px;
+    background-size: 18px 18px;
+    background-position: left;
+    padding-left: 30px;
+}
+
+.search:focus {
+    outline: none;
+    border: 1px solid gray;
+}
+
+/* Login */
+
+.login-block {
+    width: 30vw;
+    height: 16vh;
+    background-color: ghostwhite;
+}
+
+.sign {
+    width: 20vw;
+    height: 16vh;
+    border: 2px solid darkgrey;
+    box-sizing: border-box;
+}
+.myForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+}
+
+.block img {
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+}
+
+.block input {
+    margin-left: 10px;
+    background-color: white;
+}
+
+.block input placeholder {
+    color: grey;
+}
+
+.formContainer1 {
+    width: 20vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.formCol1{
+    margin: 10px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.registration {
+    width: 40vw;
+    height: 5vh;
+    margin: 0 auto;
+    margin-left: 55vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial;
+    font-size: 14px;
+    color: dimgray;
+}
+
+.registration a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    cursor: pointer;
+}
+
+.login {
+    border: none;
+    border-radius: 15%;
+}
+
+.forget {
+    margin: 0;
+    padding: 3px;
+    font-family: Arial;
+    font-size: 14px;
+    color: palevioletred;
+    text-shadow: 1px 1px 2px black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.forget a {
+    cursor: pointer;
+}
+
+.userIn {
+    width: 30wv;
+    height: 11vh;
+    text-align: center;
+    font-family: Arial;
+    font-size: 18px;
+    color: black;
+}
+
+.userIn img {
+    width: 50px;
+    height: 50px;
+}
+
+/* buttons */
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.formSubmit {
+    width: 100px;
+    height: 5vh;
+    background-color: black;
+    border: 2px solid lightgrey;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial;
+    font-size: 16px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.formSubmit:active {
+    background-color: gray;
+}
+
+.formSubmit:focus {
+    border: none;
+    outline: none;
+}
+
+/* Products */
+
+.productBlock {
+    width: 90%;
+    height: auto;
+    float: right;
+    background-color: grey;
+}
+
+.headItemsBlock {
+    width: 90vw;
+    height: 100px;
+    background: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.headItemsBlock h1 {
+    margin: 0px;
+    font-family: Arial;
+    font-size: 62px;
+    color: palevioletred;
+    text-shadow: 2px 2px 2px grey;
+} 
+
+.addItemButton {
+    font-size: 20px;
+    vertical-align: 10px;
+    margin-left: 40px;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    box-sizing: border-box;
+    width: 230px;
+    height: auto;
+}
+
+.img {
+    width: 150px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.img img {
+    width: 150px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.name {
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial;
+    font-size: 26px;
+    color: black;
+}
+
+.price {
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+    color: black;
+}
+
+.choosenItem {
+    background-color: gainsboro;
+    border-radius: 5px;
+}
+
+.newItemBlock {
+    width: 500px;
+    height: 200px;
+    margin: auto;
+}
+
+.pagin {
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 288px;
+    border-radius: 20px;
+}
+
+.items {
+    width: 1000px;
+    min-height: 200px;
+    margin: auto;
+}
+
+.pagAddr {
+    cursor: pointer;
+}
+
+/* Contacts */
+
+.contactBlock {
+    width: 90%;
+    height: 60vh;
+    float: right; 
+    background-color: blueviolet;
+}
+
+
+/* Chat */
+
+.chatHidden {
+    width: 30px;
+    height: 55vh;
+    background-color: black;
+    float: left;
+    margin-top: 10vh;
+    position: absolute;
+}
+
+.close {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: white;
+    background: url('../images/close.png');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    float: right;
+    display: none;
+}
+
+.parg {
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.parg p {
+    color: white;
+    writing-mode: vertical-lr;
+    font-size: 18px;
+    font-family: Arial;
+    margin-right: 5px;
+}
+
+.chatBlock {
+    display: none;
+}
+
+.chatForm {
+    color: white;
+    font-size: 16px;
+    font-family: Arial;
+    margin: 10px;
+}
+
+.chatLabel {
+    margin-left: 20px;
+}
+
+.chatInput {
+    width: 72%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.chatField {
+    width: 70%;
+    height: 30vh;
+    background-color: white;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.text {
+    margin-left: 30px;
+    margin-top: 10px;
+    height: 5vh;
+}
+
+.textarea {
+    width: 72%;
+}
+
+.start {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start input {
+    background-color: pink;
+    color: black;
+    font-family: Arial;
+    font-size: 14px;
+    width: 70%;
+    height: 40px;
+}
+
+
+/* Slider */
+
+.containner {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    overflow: auto;
+    float: left;
+    display: inline;
+    float: right;
+    position: relative;
+    z-index: 0;
+}
+
+.slider-outer {
+    width: 60vw;
+    height: auto;
+    margin: 0 auto;
+}
+
+.slider-inner {
+    width: 50vw;
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    padding: 3px;
+    border: #666 solid 1px;
+}
+
+.slider-inner img {
+    display: none;
+    width: 50vw;
+    height: 60vh;
+    position: relative;
+}
+
+.slider-inner img.active {
+    display: inline-block;
+    position: relative;
+}
+
+.prev,
+.next {
+    float: left;
+    margin-top: 28vh;
+    cursor: pointer;
+    width: 70px;
+}
+
+.prev {
+    position: relative;
+    margin-right: 5px;
+    z-index: 0;
+}
+
+.next {
+    position: relative;
+    margin-left: 5px;
+    z-index: 0;
+}
+
+/* Footer */
+
+.footer {
+    width: 100vw;
+    height: 7vh;
+    background-color: black;
+    margin-top: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    color: white;
+    font-family: Arial;
+    font-size: 12px;
+}

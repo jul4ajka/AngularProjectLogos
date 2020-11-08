@@ -1,0 +1,25 @@
+<div class="addItemField" ng-show="addItemStatus">
+    <div class="headItemsBlock">
+        <h1>New Item</h1>
+    </div>
+    <div class="newItemBlock">
+        <form role="form" name="newItemForm" novalidate>
+
+            <input type="text" ng-model="nameOfNewItem" placeholder="Name" required><br>
+
+            <input type="text" ng-model="priceOfNewItem" placeholder="Price" required><br>
+
+            <textarea ng-model="aboutNewItem" placeholder="About Item" required></textarea><br>
+            
+            <label class="uploadbutton">
+            <div class="button">Upload</div>
+            <input type="file" file-model="myFile">
+            </label><br>
+
+
+            <button type="button" class="btn btn-labeled btn-success" ng-click="addNewItem(fileOfNewItem)" ng-disabled="newItemForm.$invalid"><span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Create</button>
+
+            <button type="button" class="btn btn-labeled btn-danger" ng-click="backFromAddItem()"><span class="btn-label"><i class="glyphicon glyphicon-remove"></i></span>Back</button>
+        </form>
+    </div>
+</div>

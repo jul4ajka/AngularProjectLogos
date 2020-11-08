@@ -1,0 +1,42 @@
+<div class="productBlock" ng-if="productStatus">
+    <div ng-show="allProducts">
+        <div class="headItemsBlock">
+            <h1>Fashion jeans <input class="addItemButton" type="button" ng-click="addItem()" value="Add Item"></h1>
+        </div>
+        <div class="products">
+            <div class="item" ng-repeat="a in items | filter: sortTovars track by $index" ng-click="chooseItem(a.id,a.name,a.price,$index,a.src)">
+                <div class="img">
+                    <img src="../images/{{a.src}}" /></div>
+                <div class="name">{{a.name}}</div>
+                <div class="price">{{a.price | currency}}</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div ng-show="statusItem" class="choosenItem">
+        <div class="headItemsBlock">
+            <h1>{{choosenItemName}}</h1>
+        </div>
+        <div>
+            <h2>{{choosenItemText}}</h2>
+            <h2>Price: {{choosenItemPrice | currency}}</h2>
+            <img src="../img/{{choosenItemSrc}}" width="100px" height="50px">
+            <input type="button" value="edit" ng-click="editItem()">
+            <input type="button" value="delete" ng-click="deleteItem()">
+            <input type="button" ng-click="backToAllItems()" value="Back">
+        </div>
+        <div ng-show="editItemStatus">
+            <h2>Name :</h2><input type="text" ng-model="newNameOfItem"><br>
+            <h2>Price :</h2><input type="text" ng-model="newPriceOfItem"><br>
+            <h2>About Item :</h2><textarea ng-model="newInfoOfItem"></textarea><br>
+            <img src="../img/{{newItemSrc}}" width="100px" height="50px">
+            <label class="uploadbutton" ng-click="changeSatusImgUpload()">
+            <div class="button">Upload</div>
+            <input type="file" file-model="myFile" >
+            </label><br>
+            <input type="button" ng-click="changeItemEdit()" value="Change">
+        </div>
+    </div>
+    <add-item-block></add-item-block>
+</div>

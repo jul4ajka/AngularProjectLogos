@@ -1,0 +1,7 @@
+{
+    "name": "My Final Lofos IT Academy Project",
+    "description": "MEAN stack project",
+    "repository": "https://github.com/jul4ajka/AngularProjectLogos",
+    "keywords": ["MySQL",  "express", "angular", "node"],
+    "image": "heroku/nodejs"
+}

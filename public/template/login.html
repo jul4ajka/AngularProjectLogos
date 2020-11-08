@@ -1,0 +1,29 @@
+<div class="loginBlock">
+        <div ng-show="newUser">
+            <div class="sign">
+                <form name="myForm" class='myForm' novalidate>
+                    <div class="block"> <img src="../images/loginIcon.png" alt="login" />
+                        <input type="text" placeholder=" login" class="login" name="login" ng-model="login" ng-minlength="3" ng-maxlength="10" required> <span style="color:grey" ng-show="myForm.login.$touched && myForm.login.$invalid">
+                            <span ng-show="myForm.login.$error.required"> Empty</span> <span ng-show="myForm.login.$error.minlength"> Less than 3 symbols</span> <span ng-show="myForm.login.$error.maxlength"> More than 10 symbols</span></span>
+                    </div>
+                    <div class="block"> <img src="../images/mailIcon.png" alt="mail" />
+                        <input type="email" class="login" placeholder=" e-mail" ng-model="email" name="email" required> <span style="color:grey" ng-show="myForm.email.$touched && myForm.email.$invalid">
+            <span ng-show="myForm.email.$error.required">Empty</span> <span ng-show="myForm.email.$error.email">Wrong email</span> </span>
+                    </div>
+                    <div class="block"> <img src="../images/passwordIcon.png" alt="password" />
+                        <input type="password" name="password" placeholder=" password" ng-model="password" class="login" required> <span style="color:grey" ng-show="myForm.password.$touched && myForm.password.$invalid">
+                     <span ng-show="myForm.password.$error.required"> Empty</span> </span>
+                    </div>
+                    <p class="forget"> <a ng-click="forget()">Forget password?</a> </p>
+                </form>
+            </div>
+        </div>
+        <div class="userIn" ng-show="enterLogin">
+              <img src="../images/userIn.jpg" alt="user" /> {{userIn}}
+        </div>
+        <div class="buttons">
+            <input type="button" value="Sign In" ng-click="signIn()" class="formSubmit">
+            <input type="button" value="Sign Up" ng-click="registration()" class="formSubmit">
+            <input type="button" value="Log Out" ng-click="logOut()" class="formSubmit"> 
+        </div>
+</div>c

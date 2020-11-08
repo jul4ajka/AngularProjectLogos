@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fashion</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <base href="/">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/ngDialog.min.css">
+    <link rel="stylesheet" href="./css/ngDialog-theme-default.min.css">
+    <script src="../socket.io/socket.io.js."></script>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/angular.js"></script>
+    <script src="./js/angular-route.js"></script>
+    <script src="./js/ngDialog.min.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+
+<body ng-controller="myCtrl">
+    <div class="header">
+        <div class="headerMenu">
+            <menu-block></menu-block>
+            <search-block></search-block>
+        </div>
+        <login-block></login-block>
+    </div>
+    <slider-block></slider-block>
+    <product-block></product-block>
+    <contact-block></contact-block>
+    <chat-block></chat-block>
+    <footer-block></footer-block>
+</body>
+
+</html>
