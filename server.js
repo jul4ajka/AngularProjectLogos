@@ -43,7 +43,7 @@ var upload = multer({
 
 const io = require('socket.io').listen(server);
 
-const { Pool } = require('pg')
+
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
@@ -53,22 +53,12 @@ app.use(bodyParser.urlencoded({
 
 
 //MySQL
-// const connection = mysql.createConnection({
-//       host: 'ec2-54-166-114-48.compute-1.amazonaws.com'
-//     , user: 'vfnvbgxlcqzenm'
-//     , password: 'eb31a97918e559df4a86ad1c03538b5dc212e70d7788046b95e3cb29570f0d1c'
-//     , database: 'dbhqodm5m2ctav'
-// });
-
-
-//PosgreSQL
-const connection = new Pool({
-  user: 'vfnvbgxlcqzenm',
-  host: 'ec2-54-166-114-48.compute-1.amazonaws.com',
-  database: 'dbhqodm5m2ctav',
-  password: 'eb31a97918e559df4a86ad1c03538b5dc212e70d7788046b95e3cb29570f0d1c',
-  port: 5432,
-})
+const connection = mysql.createConnection({
+      host: 'https://www.cleardb.com/database/details?id=939C9BA46DE119CF092E6639050A02EA'
+    , user: 'b5d1c69d629027'
+    , password: 'c9c55946'
+    , database: 'heroku_964e4b7f0a0c233'
+});
 
 
 // Ставорення таблиці користувачів
