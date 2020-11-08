@@ -43,7 +43,7 @@ var upload = multer({
 
 const io = require('socket.io').listen(server);
 
-const { Pool, Client } = require('pg')
+const { Pool } = require('pg')
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
@@ -70,14 +70,6 @@ const connection = new Pool({
   port: 5432,
 })
 
-const client = new Client({
-  user: 'vfnvbgxlcqzenm',
-  host: 'ec2-54-166-114-48.compute-1.amazonaws.com',
-  database: 'dbhqodm5m2ctav',
-  password: 'eb31a97918e559df4a86ad1c03538b5dc212e70d7788046b95e3cb29570f0d1c',
-  port: 5432,
-})
-client.connect()
 
 // Ставорення таблиці користувачів
 const initDb = function () {
@@ -88,7 +80,7 @@ const initDb = function () {
         console.log('CREATE TABLE IF NOT EXISTS users');
     });
 };
-// initDb();
+initDb();
 io.sockets.on('connection', function (socket) {
     console.log('user connected');
     //Отримання користувачів - бізнес логіка на стороні сервера
